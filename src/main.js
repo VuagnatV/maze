@@ -56,7 +56,6 @@ function pathFinding(maze, sc, goal){
     let curr = pq.dequeue()
     curr.discovered = true
     if(maze[curr.x][curr.y] == '2'){
-      for(let i = 0; i < copy.length; i++) console.log(...copy[i])
       return curr
     } 
     copy[curr.x][curr.y] = '-'
